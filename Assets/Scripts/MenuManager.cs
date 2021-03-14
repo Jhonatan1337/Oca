@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine.EventSystems;
 using System;
 
-public class MenuManager : MonoBehaviour, IDragHandler, IEndDragHandler, IBeginDragHandler
+public class MenuManager : MonoBehaviour
 {
     public static GameObject itemDragging;
 
@@ -16,7 +16,7 @@ public class MenuManager : MonoBehaviour, IDragHandler, IEndDragHandler, IBeginD
     // Start is called before the first frame update
     void Start()
     {
-        dragParent = GameObject.FindGameObjectWithTag("DragParent").transform;
+        dragParent = GameObject.FindGameObjectWithTag("DragParent").GetComponent<Transform>();
     }
 
     // Update is called once per frame

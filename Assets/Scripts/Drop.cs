@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class DropandDrag : MonoBehaviour, IDropHandler
+public class DropandDrag : MonoBehaviour
 {
     public GameObject item;
     // Start is called before the first frame update
