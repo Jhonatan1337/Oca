@@ -4,15 +4,22 @@ using UnityEngine;
 
 public class PlayerSelection : MonoBehaviour
 {
+
+    public StateManager stateManager;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        stateManager = GameObject.FindGameObjectWithTag("GameState").GetComponent<StateManager>();
+        if (stateManager == null)
+        {
+            Debug.LogError("No se encontró el objeto StateManager en la escena actual.");
+        }
+
     }
 
-    // Update is called once per frame
-    void Update()
+    public void setPlayer(int playersNumber)
     {
-        
+        stateManager.jugadores = playersNumber;
     }
 }
