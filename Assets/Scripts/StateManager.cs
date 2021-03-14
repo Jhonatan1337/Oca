@@ -11,6 +11,7 @@ public class StateManager : MonoBehaviour
     public int skinJugador2;
     public int skinJugador3;
     public int skinJugador4;
+    public int tablero;
 
     // Se llama cuando el objeto es cargado en memoria.
     void Awake()
