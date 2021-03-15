@@ -30,5 +30,11 @@ public class StateManager : MonoBehaviour
         DontDestroyOnLoad(this.gameObject);
     }
 
+    void Start()
+    {
+        QualitySettings.vSyncCount = 0;
+        Application.targetFrameRate = 30;
+    }
+
 
 }

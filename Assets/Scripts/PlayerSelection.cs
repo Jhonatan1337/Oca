@@ -22,4 +22,12 @@ public class PlayerSelection : MonoBehaviour
     {
         stateManager.jugadores = playersNumber;
     }
+
+    public void setSkinsDefault()
+    {
+        stateManager.skinJugador1 = 0;
+        stateManager.skinJugador2 = 0;
+        stateManager.skinJugador3 = 0;
+        stateManager.skinJugador4 = 0;
+    }
 }
