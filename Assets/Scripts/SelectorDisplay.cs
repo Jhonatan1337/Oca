@@ -17,10 +17,10 @@ public class SelectorDisplay : MonoBehaviour
             Debug.LogError("No se encontró el objeto StateManager en la escena actual.");
         }
 
-        if (stateManager.jugadores < 0 || stateManager.jugadores > playerNumberRepresent)
+        if (stateManager.jugadores < playerNumberRepresent)
         {
-            Destroy(this.gameObject);
-        }
+            this.gameObject.SetActive(false);
+        } 
     }
 
 }
